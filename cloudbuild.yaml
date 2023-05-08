@@ -8,4 +8,4 @@ steps:
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ["run", "deploy", "node-build-service", "--image", "gcr.io/gcp-training-377619/node-build-app:v1", "--region", "us-central1"]
+    args: ["run", "deploy", "node-build-service", "--allow-unauthenticated", "--image", "gcr.io/gcp-training-377619/node-build-app:v1", "--region", "us-central1"]
